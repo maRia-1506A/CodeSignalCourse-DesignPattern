@@ -39,5 +39,8 @@
 // TODO: Call play method on the created FLACFile
 
 public class MusicFile {
+    public static void main(String[] args) {
+        
+    }
 
 }
