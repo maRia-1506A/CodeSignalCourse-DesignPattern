@@ -5,7 +5,7 @@
 // TODO: Create a class InstrumentFactory with an enum for InstrumentType
 // TODO: Add a factory method to create instruments based on the type
 
-// TODO: Create a Main class to test the Instrument factory method
+// TODO: Create a Main class to test the Instrument FACTORY method
 // TODO: Use the InstrumentFactory to create a Guitar and call the play method
 // TODO: Use the InstrumentFactory to create a Piano and call the play method
 // TODO: Use the InstrumentFactory to create an unsupported instrument (null) and call the play method
