@@ -42,7 +42,15 @@ public abstract class MusicFile {
     public abstract void play();
 
     public static void main(String[] args) {
-        
+        MusicFile mp3 = MusicFileFactory.createMusicFile(new MP3FileFactory());
+        mp3.play();
+
+        MusicFile wav = MusicFileFactory.createMusicFile(new WAVFileFactory());
+        wav.play();
+
+        MusicFile flac = MusicFileFactory.createMusicFile(new FLACFileFactory());
+        flac.play();
+
     }
 }
 
@@ -64,32 +72,32 @@ class FLACFile extends MusicFile {
     }
 }
 
-// interface 
+// interface
 interface MusicFileAbstractFactory {
     MusicFile createMusicFile();
 }
 
-class MP3FileFactory implements MusicFileAbstractFactory{
-    public MusicFile createMusicFile(){
+class MP3FileFactory implements MusicFileAbstractFactory {
+    public MusicFile createMusicFile() {
         return new MP3File();
     }
 }
 
-class WAVFileFactory implements MusicFileAbstractFactory{
-    public MusicFile createMusicFile(){
+class WAVFileFactory implements MusicFileAbstractFactory {
+    public MusicFile createMusicFile() {
         return new WAVFile();
     }
 }
 
-class FLACFileFactory implements MusicFileAbstractFactory{
-    public MusicFile createMusicFile(){
+class FLACFileFactory implements MusicFileAbstractFactory {
+    public MusicFile createMusicFile() {
         return new FLACFile();
     }
 }
 
-// main factory class 
+// main factory class
 class MusicFileFactory {
-    public static MusicFile createMusicFile(MusicFileAbstractFactory factory){
+    public static MusicFile createMusicFile(MusicFileAbstractFactory factory) {
         return factory.createMusicFile();
     }
 }
