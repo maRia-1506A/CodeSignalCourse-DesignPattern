@@ -1,3 +1,5 @@
+// COMPOSITE DP
+
 // TODO: Define the TeamMember interface with a method to show member details
 // The method should be named showMemberDetails and should not take any parameters or return any value.
 
@@ -39,7 +41,7 @@ import java.util.List;
 public interface TeamMember {
     void showMemberDetails();
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
         Analyst analyst1 = new Analyst(101, "Alice", "Data Analyst");
         Analyst analyst2 = new Analyst(102, "Bob", "Business Analyst");
@@ -54,7 +56,6 @@ public interface TeamMember {
 
         projectTeam.showMemberDetails();
     }
-
 }
 
 class Analyst implements TeamMember {
