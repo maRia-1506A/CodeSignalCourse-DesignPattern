@@ -1,4 +1,4 @@
-// TODO: Implement the SINGLETON pattern for this class
+// TODO: Implement the SINGLETON PATTERN for this class
 
 // TODO: Create a private constructor to prevent instantiation from other classes
 // Print statement to indicate the constructor is only called once per JVM

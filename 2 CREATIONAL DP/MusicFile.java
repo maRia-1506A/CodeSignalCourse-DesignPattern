@@ -1,4 +1,4 @@
-// TODO: Define the ABSTRACT class MusicFile with an abstract play method
+// TODO: Define the ABSTRACT CLASS MusicFile with an abstract play method
 // TODO: Declare the abstract method play()
 
 // TODO: Define MP3File class which extends MusicFile
